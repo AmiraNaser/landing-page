@@ -1,6 +1,11 @@
+//global variables
 const ul = document.getElementById('navbar__list');
 const sections = document.getElementsByTagName('section');
+//initalize fragment
 const d = document.createDocumentFragment();
+
+const topLink = document.querySelector('.top');
+const topSec = document.getElementsByTagName('section')[0];
 
 function createNav () {
   for (let section of Array.from(sections)) {
@@ -33,8 +38,7 @@ function createNav () {
 
 createNav();
 
-const topLink = document.querySelector('.top');
-const topSec = document.getElementsByTagName('section')[0];
+
 
 // top link icon click event
 topLink.addEventListener('click', (e) => {
